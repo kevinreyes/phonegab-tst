@@ -1,6 +1,6 @@
 var SILLY= (function(module) {
  module.DoIt = function(resultObject) {
- resultObject.prepend(Date() + '<br/>');
+    resultObject.prepend(Date() + '<br/>');
  };
 
  return module
