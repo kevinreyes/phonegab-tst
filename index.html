@@ -1,19 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
- <title>Ejemplo phoneGap</title>
-  <preference name="phonegap-version" value="3.1.0" /> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Single page template</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
   <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
 </head>
-
 <body>
- <h1><img src="img/icon.png" alt="icon-app" /> Prueba phoneGap</h1>
-   <button id="silly">Fecha Hora</button>
-   <button id="clear">Borrar</button>
-  <div id="results"></div>
+  <div data-role="page">
+	<div data-role="header">
+		<h1><img src="img/icon.png" alt="icon-app" /> Prueba phoneGap</h1>
+	</div><!-- /header -->
 
-<script src="js/zepto.js"></script>
- <script src="js/silly.js"></script>
+	<div data-role="content">
+		<p><button id="silly">Fecha Hora</button></p>
+    <button id="clear">Borrar</button>
+    <div id="results"></div>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Esto solo es una prueba</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+  <script src="js/zepto.js"></script>
+  <script src="js/silly.js"></script>
+  <script src="js/lib/jquery.mobile/jquery.mobile.custom.min.js"></script>
 
 <script>
  $('#silly').click(function() {
@@ -24,7 +41,7 @@
 });
 
 </script>
-<a href="readme.html"><button>Mayor Info</button></a> | 
+<a href="readme.html"><button>Mayor Info</button></a> |
 <a href="#" onclick="window.open('https://github.com/fitorec/phonegab-tst', '_system');">
   <button>Visitar Repositorio</button>
 </a>
