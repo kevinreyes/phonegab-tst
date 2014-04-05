@@ -5,33 +5,35 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Single page template</title>
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
   <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
 </head>
 <body>
-  <div data-role="page">
-	<div data-role="header">
-		<h1><img src="img/icon.png" alt="icon-app" /> Prueba phoneGap</h1>
-	</div><!-- /header -->
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1><img src="img/icon.png" alt="icon-app" /> Prueba phoneGap</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>
+      <button id="silly">Fecha Hora</button>
+      <button id="clear">Borrar</button>
+      <div id="results"></div>
+    </p>
+  </div>
 
-	<div data-role="content">
-		<p><button id="silly">Fecha Hora</button></p>
-    <button id="clear">Borrar</button>
-    <div id="results"></div>
-	</div><!-- /content -->
-
-	<div data-role="footer">
-		<h4>Esto solo es una prueba</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
+  <div data-role="footer">
+    <a href="readme.html">Mayor Info</a> |
+    <a href="#" onclick="window.open('https://github.com/fitorec/phonegab-tst', '_system');">
+      Visitar Repositorio
+    </a>
+  </div>
+</div>  
 
 
   <script src="js/zepto.js"></script>
   <script src="js/silly.js"></script>
-  <script src="js/lib/jquery.mobile/jquery.mobile.custom.min.js"></script>
-
+  <script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.mobile-1.1.0.min.js"></script>
 <script>
  $('#silly').click(function() {
 	SILLY.DoIt($('#results'));
@@ -41,10 +43,6 @@
 });
 
 </script>
-<a href="readme.html"><button>Mayor Info</button></a> |
-<a href="#" onclick="window.open('https://github.com/fitorec/phonegab-tst', '_system');">
-  <button>Visitar Repositorio</button>
-</a>
 
 
 </body>
