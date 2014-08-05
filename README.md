@@ -1,7 +1,7 @@
 phonegab test
 ============
 
-**Probando ghone-gab!**, esta es una simple aplicación de prueba para probar <https://build.phonegap.com/apps> 
+**Probando ghone-gab!**, esta es una simple aplicación de prueba para probar <https://build.phonegap.com/apps>
 
 ### URLS interesantes:
 
@@ -10,4 +10,5 @@ phonegab test
  - <http://docs.phonegap.com/en/3.4.0/index.html> **API** de phoneGab
  - <http://www.phonegapspain.com/> Phonegap Comunidad hispana
  - <http://zeptojs.com/> Librería Zepto.js
+ - <http://cordova.apache.org/> Cordova sito oficial
 
