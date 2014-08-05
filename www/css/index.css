@@ -62,7 +62,7 @@ body {
 @media screen and (orientation: landscape) {
 	body {
 		background-image: none !important;
-		background-color: #FF9200;
+		background-color: #400080;
 	}
 }
 /* Landscape layout (with min-width) */
